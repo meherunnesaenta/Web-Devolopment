@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery in tailwind</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="container mx-auto mt-10 flex flex-wrap gap-2 [&>*]:border-blue-400 ">
+        <img class="width-80 img"src="food" alt="">
+        <img class="width-80 img"src="food" alt="">
+        <img class="width-80 img"src="food" alt="">
+        <img class="width-80 img"src="food" alt="">
+        <img class="width-80 img"src="food" alt="">
+        <img class="width-80 img"src="food" alt="">
+        <img class="width-80 img"src="food" alt="">
+        <img class="width-80 img"src="food" alt="">
+        <img class="width-80 img"src="food" alt="">
+
+    </div>
+      <!-- DropDown -->
+   <div class="group m-50">
+    <div class="text-blue-400 hover:text-blue-700 cursor-pointer">
+        city List
+    </div>
+    <div class="hidden group-hover:block bg-blue-700 w-32 text-white">
+        <ul>
+            <li class="hover:bg-blue-200 size:23 hover:text-black"><a href="">Delhi</a></li>
+            <li class="hover:bg-blue-200 size:23 hover:text-black"><a href="">Nodia</a></li>
+            <li class="hover:bg-blue-200 size:23 hover:text-black"><a href="">Gurgaon</a></li>
+            <li class="hover:bg-blue-200 size:23 hover:text-black"><a href="">Hisar</a></li>
+        </ul>
+    </div>
+   </div>
+</body>
+</html>
