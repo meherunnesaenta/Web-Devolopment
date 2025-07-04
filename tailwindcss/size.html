@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size learning in tailwind css</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-300">
+   <div class="flex">
+    <div class=" m-10 w-50 h-50 bg-amber-400">code step by step</div>
+    <div class="size-95 bg-red-400">Code step by step</div>
+    <div class="size-1/2 m-5 bg-blue-400">Code step by step</div>
+   </div>
+    <!-- position  -->
+   <div class="size-110 bg-black relative m-auto ">
+    <div class="bg-red-200 size-20 absolute bottom-0 right-0"></div>
+    <div class="bg-green-200 size-20 absolute bottom-0"></div>
+    <div class="bg-blue-200 size-20 absolute top-0 right-0"></div>
+    <div class="bg-yellow-200 size-20 absolute top-0 left-0"></div>
+   </div>
+    <div class="size-96 bg-green-500 relative">
+        <div class="bg-green-900 size-32 inset-30 absolute"></div>
+    </div>
+    <!-- Container -->
+      <div class="">
+        <ul class="flex justify-end [&>*]:p-4">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    <div class="text-3xl bg-amber-500 container mx-auto ">Container Class</div>
+    <div class="text-7xl bg-amber-400 container mx-auto">Main Page</div>
+    <div class="text-xl bg-amber-300 container mx-auto">Down Page</div>
+    <!-- Backgound -->
+    <div class="bg-red-500  h-56" style="background-image:url(food) ">Main tailwind</div>
+    <div class="bg-red-500 h-57 bg-[url(food)] bg-no-repeat bg-center bg-cover">Code Step by Step</div>
+    <div class="gradient bg-gradient-to-t to-blue-500 from-red-500 size-96 shadow-inner shadow-white m-10">
+    </div>
+    <div class="gradient bg-gradient-to-b to-yellow-500 from-blue-500 size-96 mx-auto my-20 shadow-orange-500 shadow-xl"></div>
+
+
+</body>
+</html>

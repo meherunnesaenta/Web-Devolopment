@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns & grid & trinsition and teansform & Animation in tailwind css</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="columns-3">
+        <h1 class="bg-red-500">Heading 1</h1>
+        <h1 class="bg-blue-500">Heading 2</h1>
+        <h1 class="bg-green-500">Heading 3</h1>
+        <h1 class="bg-yellow-500">Heading 4</h1>
+        <h1 class="bg-blue-200">Heading 5</h1>
+        <h1 class="bg-green-200">Heading 6</h1>
+    </div>
+    <div class="columns-3">
+        <img src="food" alt="">
+        <img src="food" alt="">
+        <img src="food" alt="">
+        <img src="food" alt="">
+        
+
+    </div>
+    <!-- grid -->
+    <div class="grid [&>*]:border border-black border-2xl grid-cols-3 gap-0 m-10">
+        <div class="bg-blue-500 p-10 col-span-3"></div>
+        <div class="bg-blue-500 p-10"></div>
+        <div class="bg-blue-500 p-10 row-span-2"></div>
+        <div class="bg-blue-500 p-10"></div>
+        <div class="bg-blue-500 p-10"></div>
+        <div class="bg-blue-500 p-10 "></div>
+        <div class="bg-blue-500 p-10"></div>
+        <div class="bg-blue-500 p-10"></div>
+    </div>
+   <!-- Transition -->
+    <div>
+
+        <button class="bg-blue-500 text-white p-2 m-2 rounded hover:bg-blue-900">
+            Login
+        </button>
+        <button class="bg-blue-500 p-2 m-10 text-white rounded hover:bg-blue-900 transition duration-1000">Signup</button>
+        <button class="bg-blue-500 p-2 m-10 text-white rounded hover:opacity-50 transition duration-1000">button 3</button>
+        <button class="bg-red-500 p-2 m-10 text-white rounded hover:rotate-180 transition-transform duration-1000">Button 4</button>
+        <button class="bg-red-500 p-2 m-10 text-white rounded hover:scale-125 transition-transform duration-1000">Button 5</button>
+    </div>
+
+    <!-- Animation -->
+     <div>
+        <div class="size-10 bg-red-500 mt-10 ml-10 rounded-full animate-bounce "></div>
+        <div class=" bg-red-500 mt-32 ml-32 w-32 h-2 animate-spin "></div>
+        <div class="size-10 bg-red-500 m-10 rounded-full animate-ping "></div>
+        <div class="size-10 bg-red-500 m-52 rounded-full animate-pulse "></div>
+     </div>
+
+</body>
+</html>
